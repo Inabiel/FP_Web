@@ -93,7 +93,7 @@ class Auth extends CI_Controller
       $cek = $this->auth_model->cek_login($username);
       //Pengecekan username
       if ($cek == FALSE) {
-        $this->session->set_flashdata('errors', "Maaf Username tidak terdaftar");
+        $this->session->set_flashdata('errors', "Maaf, Username atau Password salah");
         redirect('login');
       } else {
         //Pengecekan password
