@@ -87,8 +87,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-t-15 text-center">
+                        <div class="p-t-15">
                             <button class="btn btn--radius-2 btn-primary" type="submit">Submit</button>
+                            <button class="btn btn--radius-2 btn-primary" type="button"><a
+                                    href="<?php echo site_url('auth/login')?>"
+                                    class="text-white text-decoration-none">Login</a></button>
                         </div>
                     </form>
                 </div>
