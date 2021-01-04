@@ -8,9 +8,11 @@
 </head>
 
 <body>
-    <div class="container" style="min-height:500px">
+    <div class="container-fluid" style="min-height:500px">
         <?php $this->load->view("user/header") ?>
-        <h3 class="text-center mt-3">GALERI</h3>
+        <div class="bg-warning">
+            <h3 class="pt-1 pb-2 text-center mt-3 text-white">Galeri</h3>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-12">

@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Bengkel Las Laras</title>
-    <link rel="stylesheet" href="<?php echo base_url(); ?>css/bootstrap.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>css/style.css">
+    <link rel="stylesheet" href="<?php echo base_url('css/style.css');?>">
+    <link rel="stylesheet" href="<?php echo base_url('css/bootstrap.css');?>">
     <link rel="stylesheet" href="<?php echo base_url('node_modules\hover.css\css\hover.css'); ?>">
     <script type="text/javascript" src="<?php echo base_url(); ?>assets/jquery/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"

@@ -9,6 +9,12 @@
   background: #1E1E1E;
   color: #FFF;
 }
+.widget-background{
+  min-height: 50px;
+  background-color: #FD5D14;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 .title-widget{
   color: #FD5D14;
   margin-top: 15px;
