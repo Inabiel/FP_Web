@@ -1,0 +1,24 @@
+.navbar-laras{
+  background: #fff;
+}
+.navbar-laras a{
+  color: #000;
+}
+.footer-widget{
+  background: #1E1E1E;
+  color: #FFF;
+}
+.title-widget{
+  color: #FD5D14;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+footer{
+  background: #111111;
+  color: #747474;
+  padding: 30px;
+}
+.copyright-laras a{
+  color: #747474;
+  text-decoration: none;
+}
