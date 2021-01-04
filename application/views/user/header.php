@@ -24,7 +24,7 @@
             <a class="navbar-brand" href="<?php echo site_url('home') ?>">
                 <img src="<?php echo base_url('assets/images/logo.svg'); ?>" alt="" width="30" height="24">
             </a>
-            <a href="" class="navbar-brand">Bengkel Las Laras</a>
+            <a href="<?php echo site_url('home'); ?>" class="navbar-brand">Bengkel Las Laras</a>
             <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbartop" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -34,9 +34,9 @@
                     <a class="nav-link hvr-underline-from-left" href="<?php echo site_url('profil'); ?>">Profil</a>
                     <a class="nav-link hvr-underline-from-left" href="<?php echo site_url('jasa'); ?>">Jasa</a>
                     <a class="nav-link hvr-underline-from-left" href="<?php echo site_url('galeri'); ?>">Galeri</a>
-                    <a class="nav-link hvr-underline-from-left" href="<?php echo site_url('auth/register'); ?>">Register</a>
                     <a class="nav-link hvr-underline-from-left" href="<?php echo site_url('shopping_cart'); ?>">Shopping
                         Cart</a>
+                    <a class="nav-link hvr-underline-from-left" href="<?php echo site_url('auth/register'); ?>">Register</a>
                     <a class="nav-link hvr-underline-from-left" href="<?php echo site_url('auth/login'); ?>">Login</a>
                     <a class="nav-link hvr-underline-from-left" href="<?php echo site_url('auth/logout') ?>">Logout</a>
                     <?php if ($this->session->userdata('username')) { ?>

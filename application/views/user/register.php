@@ -77,13 +77,13 @@
                             <div class="col-6">
                                 <div class="input-group">
                                     <label class="label">email</label>
-                                    <input class="input--style-4" type="text" name="email">
+                                    <input class="input--style-4" type="email" name="email">
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="input-group">
                                     <label class="label">password</label>
-                                    <input class="input--style-4" type="text" name="password">
+                                    <input class="input--style-4" type="password" name="password">
                                 </div>
                             </div>
                         </div>

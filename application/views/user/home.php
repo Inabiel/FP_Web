@@ -12,7 +12,8 @@
     <section class="container-fluid text-center mt-3" id="header-laras">
         <div class="container width-laras">
             <div class="header-title">
-                <div style="color:#FD5D14;font-size: 120px;">Bengkel Las Laras</div>
+                <div style="color:#FD5D14;font-size: 120px;background-color:whitesmoke;padding:10px;">Bengkel Las Laras
+                </div>
                 <h1>Menerima Jasa Pembuatan : </h1>
             </div>
         </div>
@@ -23,7 +24,7 @@
 
     <div class="d-flex justify-content-center text-center">
         <div class="hubungi">
-            <h4>Hubungi Kami</h4>
+            <h4><a href="#telpon" class="text-decoration-none text-white">Hubungi Kami</a></h4>
         </div>
     </div>
     <section class="container-fluid profil">
