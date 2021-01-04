@@ -55,7 +55,7 @@
                             <div class="col-6 mx-auto">
                                 <div class="input-group">
                                     <label class="label mx-auto">Password</label>
-                                    <input class="input--style-4" type="text" name="password">
+                                    <input class="input--style-4" type="password" name="password">
                                 </div>
                             </div>
                         </div>
