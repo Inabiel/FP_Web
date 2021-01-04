@@ -8,35 +8,50 @@
 </head>
 
 <body>
-    <div class="container-fluid" style="min-height:500px">
+    <div class="container-fluid">
         <?php $this->load->view("user/header") ?>
         <div class="bg-oren" style="background-color:#FD5D14 !important">
             <h3 class="pt-1 pb-2 text-center mt-3 text-white">Galeri</h3>
         </div>
         <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-12">
-                    <img class="img-thumbnail" src="<?php echo base_url('assets/images/1.jpg')?>" alt="" srcset="">
+            <div class="row" style="padding: 15px;">
+                <div class="col-md-4 col-12 galeri">
+                    <img class="img-thumbnail" src="<?php echo base_url('assets/images/1.jpg') ?>" alt="" srcset="">
+                    <div class="galeri-info">
+                        <h3>Framing</h3>
+                    </div>
                 </div>
-                <div class="col-md-4 col-12">
-                    <img class="img-thumbnail" src="<?php echo base_url('assets/images/welding.jpg')?>" alt=""
-                        srcset="">
+                <div class="col-md-4 col-12 galeri">
+                    <img class="img-thumbnail" src="<?php echo base_url('assets/images/welding.jpg') ?>" alt="" srcset="">
+                    <div class="galeri-info">
+                        <h3>Framing</h3>
+                    </div>
                 </div>
-                <div class="col-md-4 col-12">
-                    <img class="img-thumbnail" src="<?php echo base_url('assets/images/1.jpg')?>" alt="" srcset="">
+                <div class="col-md-4 col-12 galeri">
+                    <img class="img-thumbnail" src="<?php echo base_url('assets/images/1.jpg') ?>" alt="" srcset="">
+                    <div class="galeri-info">
+                        <h3>Framing</h3>
+                    </div>
                 </div>
             </div>
             <div class="row pb-5">
-                <div class="col-md-4 col-12 pt-4">
-                    <img class="img-thumbnail" src="<?php echo base_url('assets/images/welding.jpg')?>" alt=""
-                        srcset="">
+                <div class="col-md-4 col-12 galeri">
+                    <img class="img-thumbnail" src="<?php echo base_url('assets/images/welding.jpg') ?>" alt="" srcset="">
+                    <div class="galeri-info">
+                        <h3>Framing</h3>
+                    </div>
                 </div>
-                <div class="col-md-4 col-12 pt-4">
-                    <img class="img-thumbnail" src="<?php echo base_url('assets/images/1.jpg')?>" alt="" srcset="">
+                <div class="col-md-4 col-12 galeri">
+                    <img class="img-thumbnail" src="<?php echo base_url('assets/images/1.jpg') ?>" alt="" srcset="">
+                    <div class="galeri-info">
+                        <h3>Framing</h3>
+                    </div>
                 </div>
-                <div class="col-md-4 col-12 pt-4">
-                    <img class="img-thumbnail" src="<?php echo base_url('assets/images/welding.jpg')?>" alt=""
-                        srcset="">
+                <div class="col-md-4 col-12 galeri">
+                    <img class="img-thumbnail" src="<?php echo base_url('assets/images/welding.jpg') ?>" alt="" srcset="">
+                    <div class="galeri-info">
+                        <h3>Framing</h3>
+                    </div>
                 </div>
             </div>
         </div>
