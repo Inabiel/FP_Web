@@ -32,7 +32,7 @@
 }
 #header-laras .header-title h1::after{
   content: "Pagar & Tralis";
-  animation: textanim 30s linear infinite;
+  animation: textanim 10s linear infinite;
 }
 @keyframes textanim{
   20%{
