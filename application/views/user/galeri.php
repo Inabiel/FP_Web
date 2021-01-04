@@ -10,7 +10,7 @@
 <body>
     <div class="container-fluid" style="min-height:500px">
         <?php $this->load->view("user/header") ?>
-        <div class="bg-warning">
+        <div class="bg-oren" style="background-color:#FD5D14 !important">
             <h3 class="pt-1 pb-2 text-center mt-3 text-white">Galeri</h3>
         </div>
         <div class="container">
