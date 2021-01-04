@@ -55,7 +55,8 @@ class Auth extends CI_Controller
         'username' => $username,
         'name' => $name,
         'email' => $email,
-        'password' => $pass
+        'password' => $pass,
+        'role'  => 'User'
       ];
       //parameter dari model register
       $insert = $this->auth_model->register("users", $data);
@@ -92,12 +93,6 @@ class Auth extends CI_Controller
       $password = htmlspecialchars($this->input->post('password'));
 
       $cek = $this->auth_model->cek_login($username);
-      //Redirect Username, Versi Dasar.accelerator
-      //TODO: Membuat Pengecekan jika admin di model
-      if($username == 'admin' && $password =='admin'){
-        redirect('admin');  
-      }
-      //Pengecekan username
       if ($cek == FALSE) {
         $this->session->set_flashdata('errors', "Maaf, Username atau Password salah");
         redirect('login');
@@ -107,9 +102,15 @@ class Auth extends CI_Controller
           //Buatkan session
           $this->session->set_userdata('id', $cek->id);
           $this->session->set_userdata('username', $cek->username);
+          $this->session->set_userdata('role_id',$cek->role);
+          switch($cek->role){
+            case 'Admin': redirect('admin');
+                  break;
+            case 'User':redirect('home');
+                  break;
+            default: break;
+          }
 
-          //Dialihkan ke dashboard
-          redirect('home');
         } else {
           $this->session->set_flashdata('errors', "Maaf, Username atau Password salah");
           redirect('login');
