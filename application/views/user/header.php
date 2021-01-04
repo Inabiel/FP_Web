@@ -5,26 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Bengkel Las Laras</title>
-    <link rel="stylesheet" href="<?php echo base_url(); ?>css/bootstrap.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>css/style.css">
+    <link rel="stylesheet" href="<?php echo base_url('css/style.css');?>">
+    <link rel="stylesheet" href="<?php echo base_url('css/bootstrap.css');?>">
     <link rel="stylesheet" href="<?php echo base_url('node_modules\hover.css\css\hover.css'); ?>">
     <script type="text/javascript" src="<?php echo base_url(); ?>assets/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="<?php echo base_url(); ?>assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+
+
 </head>
 
 <body>
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-laras">
+    <nav class="navbar navbar-expand-lg navbar-laras">
         <div class="container">
             <a class="navbar-brand" href="<?php echo site_url('home')?>">
                 <img src="<?php echo base_url('assets/images/logo.svg');?>" alt="" width="30" height="24">
             </a>
             <a href="" class="navbar-brand">Bengkel Las Laras</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbartop" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="collapse navbar-collapse" id="navbartop">
                 <div class="navbar-nav ms-auto">
                     <a class="nav-link hvr-underline-from-left" aria-current="page"
                         href="<?php echo site_url('home'); ?>">Home</a>

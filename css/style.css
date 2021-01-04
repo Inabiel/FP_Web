@@ -1,3 +1,4 @@
+
 .navbar-laras{
   background: #fff;
 }
@@ -82,6 +83,11 @@
 .footer-widget{
   background: #1E1E1E;
   color: #FFF;
+}
+.bg-oren{
+  background-color: #FD5D14 !important;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .title-widget{
   color: #FD5D14;

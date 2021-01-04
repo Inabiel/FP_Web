@@ -32,7 +32,7 @@ class Auth extends CI_Controller
     $this->form_validation->set_rules(
       'email',
       'Email',
-      'trim|required|is_unique[users.email]|min_length[7]|max_length[20]|valid_email'
+      'trim|required|is_unique[users.email]|min_length[7]|max_length[66]|valid_email'
     );
 
     //Membuat kondisi jika terjadi kesalahan pada form
