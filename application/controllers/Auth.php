@@ -7,6 +7,7 @@ class Auth extends CI_Controller
   {
     parent::__construct();
     //Load kebutuhan library, model, helper dll disini
+    $this->load->library('session');
     $this->load->model('auth_model');
   }
 
@@ -108,7 +109,7 @@ class Auth extends CI_Controller
           $this->session->set_userdata('username', $cek->username);
 
           //Dialihkan ke dashboard
-          redirect('shopping_cart');
+          redirect('home');
         } else {
           $this->session->set_flashdata('errors', "Maaf, Username atau Password salah");
           redirect('login');
@@ -120,8 +121,8 @@ class Auth extends CI_Controller
   public function logout()
   {
     //Body function logout...
-    $this->session->session_destroy();
-    echo "Logout berhasil";
+    $this->session->sess_destroy();
+    redirect('home'); 
   }
   public function home()
   {
@@ -139,11 +140,8 @@ class Auth extends CI_Controller
   {
     $this->load->view('user/galeri');
   }
-=======
   public function shopping_cart()
   {
     $this->load->view('user/shopping_cart');
   }
-}
-=======
 }
