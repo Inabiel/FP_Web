@@ -25,6 +25,6 @@
 
 <footer class="container-fluid text-center">
   <div class="copyright-laras">
-    &copy; 2020 | Created & Designed By <a href="<?php echo base_url(); ?>#">Bengkel Las Laras</a>
+    &copy; 2020 | Created & Designed By <a href="<?php echo base_url(); ?>home">Bengkel Las Laras</a>
   </div>
 </footer>

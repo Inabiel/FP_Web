@@ -4,6 +4,81 @@
 .navbar-laras a{
   color: #000;
 }
+/*  */
+#header-laras{
+	height: 100vh;
+  min-height: 500px;
+  background: url(http://localhost/FP_Web/assets/images/1.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#header-laras .width-laras {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+.width-laras{
+	padding: 0 40px;
+}
+.header-title {
+  color: #fff;
+}
+#header-laras .header-title h1 {
+  font-size: 30px;
+  
+}
+#header-laras .header-title h1::after{
+  content: "Pagar & Tralis";
+  animation: textanim 30s linear infinite;
+}
+@keyframes textanim{
+  20%{
+    content: "Atap Besi";
+  }
+  40%{
+    content: "Tralis & Canopy";
+  }
+  60%{
+    content: "Pintu Besi";
+  }
+  80%{
+    content: "Kusen Alumunium";
+  }
+}
+/*  */
+.title-laras{
+  background-color: #FD5D14;
+  color: #000;
+  padding: 50px 0;
+}
+/*  */
+.hubungi{
+  background-color: #000;
+  color: #fff;
+  width: 300px;
+  height: 50px;
+  margin-top: -25px;
+  margin-bottom: -25px;
+  padding: 10px 0;
+}
+/*  */
+.profil{
+  padding: 50px;
+}
+.logo-profil{
+  background: url(http://localhost/FP_Web/assets/images/logo.svg) no-repeat center;
+  height: 330px; 
+}
+/*  */
+.benefit{
+  height: 300px;
+  background: url(http://localhost/FP_Web/assets/images/1.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed; 
+}
+/*  */
 .footer-widget{
   background: #1E1E1E;
   color: #FFF;
