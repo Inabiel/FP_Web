@@ -58,7 +58,7 @@ class Auth extends CI_Controller
       ];
       //parameter dari model register
       $insert = $this->auth_model->register("users", $data);
-      $this->session->set_flashdata('success_register','Proses Pendaftaran User Berhasil');
+      $this->session->set_flashdata('success_register', 'Proses Pendaftaran User Berhasil');
       redirect('register');
     }
   }
@@ -116,5 +116,25 @@ class Auth extends CI_Controller
     //Body function logout...
     $this->session->session_destroy();
     echo "Logout berhasil";
+  }
+  public function home()
+  {
+    $this->load->view('user/home');
+  }
+  public function profil()
+  {
+    $this->load->view('user/profil');
+  }
+  public function jasa()
+  {
+    $this->load->view('user/jasa');
+  }
+  public function galeri()
+  {
+    $this->load->view('user/galeri');
+  }
+  public function shopping_cart()
+  {
+    $this->load->view('user/shopping_cart');
   }
 }
