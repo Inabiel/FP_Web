@@ -91,9 +91,14 @@ class Auth extends CI_Controller
       $password = htmlspecialchars($this->input->post('password'));
 
       $cek = $this->auth_model->cek_login($username);
+      //Redirect Username, Versi Dasar.accelerator
+      //TODO: Membuat Pengecekan jika admin di model
+      if($username == 'admin' && $password =='admin'){
+        redirect('admin');  
+      }
       //Pengecekan username
       if ($cek == FALSE) {
-        $this->session->set_flashdata('errors', "Maaf Username tidak terdaftar");
+        $this->session->set_flashdata('errors', "Maaf, Username atau Password salah");
         redirect('login');
       } else {
         //Pengecekan password
@@ -103,9 +108,10 @@ class Auth extends CI_Controller
           $this->session->set_userdata('username', $cek->username);
 
           //Dialihkan ke dashboard
-          redirect('admin');
+          redirect('shopping_cart');
         } else {
-          echo "Username dan Password salah";
+          $this->session->set_flashdata('errors', "Maaf, Username atau Password salah");
+          redirect('login');
         }
       }
     }
@@ -133,8 +139,11 @@ class Auth extends CI_Controller
   {
     $this->load->view('user/galeri');
   }
+=======
   public function shopping_cart()
   {
     $this->load->view('user/shopping_cart');
   }
+}
+=======
 }

@@ -56,6 +56,7 @@ $route['jasa'] = 'auth/jasa';
 $route['galeri'] = 'auth/galeri';
 $route['shopping_cart'] = 'auth/shopping_cart';
 $route['admin'] = 'admin/Overview';
+$route['shopping_cart'] = 'auth/shopping_cart';
 $route['register'] = 'auth/register';
 $route['login'] = 'auth/login';
 $route['404_override'] = '';
