@@ -22,3 +22,9 @@ footer{
   color: #747474;
   text-decoration: none;
 }
+
+.vertical-divider{
+  border-left: 2px solid grey;
+  height: 80%;
+  border-right: 2px solid grey;
+}
