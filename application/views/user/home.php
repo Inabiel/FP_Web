@@ -27,39 +27,33 @@
         </div>
     </div>
     <section class="container-fluid profil">
-        <div class="row justify-content-start">
-            <div class="col-6 logo-profil">
+        <div class="row">
+            <div class="col-5 logo-profil">
             </div>
-            <div class="col-6 deskripsi text-center">
-                <h1 style="color: #FD5D14;">Profil</h1>
-                <h4 style="color: #FD5D14;">Bengkel Las Laras</h4>
+            <div class="col-6 deskripsi">
+                <h1 class="text-center" style="color: #FD5D14;">Profil</h1>
+                <h4 class="text-center" style="color: #FD5D14;">Bengkel Las Laras</h4>
                 Bengkel Las Laras adalah penyedia jasa bengkel las murah di Kabupaten Sleman dengan pelayanan terbaik. di samping dengan kualitas pelayanan terbaik, bengkel las ini memberikan harga las termurah.
-                Bengkel las Laras menerima berbagai permintaan seperti pembuatan pagar, pembuatan canopy, pembuatan tralis,
+                Bengkel las Laras menerima berbagai permintaan seperti pembuatan pagar, pembuatan canopy, pembuatan tralis, pembuatan railing, pembuatan pintu Henderson, pembuatan pintu besi, dan pembuatan lainnya.
                 <a href="<?php echo base_url(); ?>profil" style="color: #FD5D14;text-decoration:none;">Selengkapnya</a>
             </div>
         </div>
     </section>
-    <div class="container-fluid benefit">
-        <div class="row justify-content-evenly">
-            <div class="col-3 text-center">
-                <a href="#">
-                    <span class="glyphicon glyphicon-tags"></span>
-                </a>
-                <h4 class="title-widget">Bengkel Las Laras</h4>
-            </div>
-            <div class="col-3 text-center">
-                <a href="#">
-                    <span class="glyphicon glyphicon-tags"></span>
-                </a>
-                <h4 class="title-widget">Bengkel Las Laras</h4>
-
-            </div>
-            <div class="col-3 text-center">
-                <a href="#">
-                    <span class="glyphicon glyphicon-tags"></span>
-                </a>
-                <h4 class="title-widget">Bengkel Las Laras</h4>
-            </div>
+    <div class="row text-center benefit">
+        <div class="col-lg-4 align-items-center justify-content-center">
+            <div class="glyphicon glyphicon-tags item-benefit" style="color: #009925;"></div>
+            <h4>Harga Terbaik</h4>
+            <p>Lorem ipsum dolor sit amet..</p>
+        </div>
+        <div class="col-lg-4">
+            <div class="glyphicon glyphicon-stats item-benefit" style="color: #D50F25;"></div>
+            <h4>Kualitas Terbaik</h4>
+            <p>Lorem ipsum dolor sit amet..</p>
+        </div>
+        <div class="col-lg-4">
+            <div class="glyphicon glyphicon-earphone item-benefit" style="color: #3369EB;"></div>
+            <h4>Hubungi Langsung</h4>
+            <p>Lorem ipsum dolor sit amet..</p>
         </div>
     </div>
     <?php $this->load->view("user/footer") ?>

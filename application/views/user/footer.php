@@ -1,8 +1,8 @@
 <div class="container-fluid footer-widget">
   <div class="row justify-content-evenly">
-    <div class="col-lg-3 col-sm-12 text-center">
-      <h4 class="title-widget">Bengkel Las Laras</h4>
-      <p>
+    <div class="col-lg-3 col-sm-12">
+      <h4 class="title-widget text-center">Bengkel Las Laras</h4>
+      <p style="text-align: justify;">
         Bengkel Las Laras adalah penyedia jasa bengkel las murah di Kabupaten Sleman dengan pelayanan terbaik.
         di samping dengan kualitas pelayanan terbaik, bengkel las ini memberikan harga las termurah.
         Bengkel las Laras menerima berbagai permintaan seperti pembuatan pagar, pembuatan canopy, pembuatan
@@ -14,7 +14,7 @@
       <p>
         HP/WA : 0812 3456 7890<br></p>
       <p>Email : XXXXX@XXXXX.XXX<br></p>
-      <p>Alamat : XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXX</p>
+      <p>Alamat : XXXXXXXXX XXXXXXXXXXXXX XXXXXXXXXXXXX XXXXXXXXXXX</p>
     </div>
     <div class="col-lg-3 col-sm-12 text-center">
       <h4 class="title-widget">Bengkel Las Laras</h4>
