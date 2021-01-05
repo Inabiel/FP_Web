@@ -3,8 +3,14 @@
 
 <head>
     <?php $this->load->view("admin/_parts/head")?>
+</head>
 
 <body>
+    <?php
+    if($this->session->userdata('role_id') != 'Admin') {
+        redirect('not_admin');
+    }
+    ?>
     <div id="wrapper">
 
         <?php $this->load->view("admin/_parts/sidebar") ?>
