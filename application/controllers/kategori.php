@@ -3,10 +3,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class Kategori extends CI_Controller
 {
     public function pagar(){
-      $this->load->view('kategori/pagar');
+    $data['pagar'] = $this->Barang_model->get_category('Pagar')->result();
+    $this->load->view('kategori/pagar',$data);
     }
     public function atap(){
-    $this->load->view('kategori/atap');
+    $data['atap'] = $this->Barang_model->get_category('Atap')->result();
+    $this->load->view('kategori/atap',$data);
     }
     public function tralis(){
         $this->load->view('kategori/tralis');
