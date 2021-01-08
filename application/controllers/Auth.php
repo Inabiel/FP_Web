@@ -127,7 +127,10 @@ class Auth extends CI_Controller
     redirect('home'); 
   }
   public function not_admin(){
-    $this->load->view('admin/404_not_admin.php');
+    $this->load->view('admin/404_not_admin');
+  }
+  public function not_found(){
+    $this->load->view('errors/404');
   }
   public function home()
   {

@@ -60,5 +60,5 @@ $route['shopping_cart'] = 'auth/shopping_cart';
 $route['register'] = 'auth/register';
 $route['login'] = 'auth/login';
 $route['not_admin'] = 'auth/not_admin';
-$route['404_override'] = '';
+$route['404_override'] = 'auth/not_found';
 $route['translate_uri_dashes'] = FALSE;
