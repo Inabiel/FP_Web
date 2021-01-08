@@ -10,9 +10,9 @@
 <body>
     <?php $this->load->view("user/header") ?>
     <div class="container mb-5">
-        <h3 class="text-center mt-2 mb-3">Tralis</h3>
+        <h3 class="text-center mt-2 mb-3">kanopi</h3>
         <div class="row text-center mt-3">
-            <?php foreach($tralis as $brg) : ?>
+            <?php foreach($kanopi as $brg) : ?>
             <div class="card ml-3 mb-3 me-4 pt-4" style="width: 16rem;">
                 <img src="<?php echo base_url('assets/images/'.$brg->gambar)?>" class="card-img-top" alt="...">
                 <div class="card-body">

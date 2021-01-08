@@ -6,20 +6,24 @@ class Kategori extends CI_Controller
     $data['pagar'] = $this->Barang_model->get_category('Pagar')->result();
     $this->load->view('kategori/pagar',$data);
     }
-    public function atap(){
-    $data['atap'] = $this->Barang_model->get_category('Atap')->result();
-    $this->load->view('kategori/atap',$data);
+    public function kanopi(){
+    $data['kanopi'] = $this->Barang_model->get_category('Kanopi')->result();
+    $this->load->view('kategori/kanopi',$data);
     }
     public function tralis(){
-        $this->load->view('kategori/tralis');
+    $data['tralis'] = $this->Barang_model->get_category('Tralis')->result();
+    $this->load->view('kategori/tralis', $data);
     }
     public function pintu(){
-        $this->load->view('kategori/pintu');
+    $data['pintu'] = $this->Barang_model->get_category('Pintu')->result();
+    $this->load->view('kategori/pintu', $data);
     }
     public function kusen(){
-        $this->load->view('kategori/kusen');
+    $data['kusen'] = $this->Barang_model->get_category('Kusen')->result();
+    $this->load->view('kategori/kusen', $data);
     }
     public function rangka(){
-        $this->load->view('kategori/rangka');
+    $data['pintu'] = $this->Barang_model->get_category('Rangka')->result();
+    $this->load->view('kategori/rangka', $data);
     }
 }

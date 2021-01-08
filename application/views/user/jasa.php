@@ -22,7 +22,7 @@
                     <div class="container">
                         <img src="<?php echo base_url('assets/images/Pagar&Tralis.jpeg')?>" class="img-fluid pt-5"
                             alt="" srcset="">
-                        <h5 class="text-center pt-4">Pagar & Tralis</h5>
+                        <h5 class="text-center pt-4">Pagar</h5>
                         <div class="d-flex justify-content-center mt-5 mb-5 pb-5">
                             <button type="button" class="btn btn-outline-dark"><a
                                     href="<?php echo site_url('kategori/pagar')?>"
@@ -35,10 +35,10 @@
                     <div class="container">
                         <img src="<?php echo base_url('assets/images/atap_besi.jpeg')?>" class="img-fluid pt-5" alt=""
                             srcset="">
-                        <h5 class="text-center pt-4">Atap Besi</h5>
+                        <h5 class="text-center pt-4">Kanopi</h5>
                         <div class="d-flex justify-content-center mt-5 mb-5 pb-5">
                             <button type="button" class="btn btn-outline-dark"><a
-                                    href="<?php echo site_url('kategori/atap')?>"
+                                    href="<?php echo site_url('kategori/kanopi')?>"
                                     class="text-black text-decoration-none">
                                     Info Lebih Lanjut</a></button>
                         </div>
@@ -46,9 +46,9 @@
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-3 mx-auto border border-2 rounded shadow">
                     <div class="container">
-                        <img src="<?php echo base_url('assets/images/kanopi.jpg')?>" class="img-fluid pt-5" alt=""
+                        <img src="<?php echo base_url('assets/images/tralis.jpeg')?>" class="img-fluid pt-5" alt=""
                             srcset="">
-                        <h5 class="text-center pt-4">Tralis & Canopy</h5>
+                        <h5 class="text-center pt-4">Tralis</h5>
                         <div class="d-flex justify-content-center mt-5 mb-5 pb-5">
                             <button type="button" class="btn btn-outline-dark"><a
                                     href="<?php echo site_url('kategori/tralis')?>"
@@ -74,8 +74,8 @@
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-3 mx-auto border border-2 rounded shadow">
                     <div class="container">
-                        <img src="<?php echo base_url('assets/images/kusen_alumunium.jpeg')?>" class="img-fluid pt-5"
-                            alt="" srcset="">
+                        <img src="<?php echo base_url('assets/images/kusen.jpg')?>" class="img-fluid pt-5" alt=""
+                            srcset="">
                         <h5 class="text-center pt-4">Kusen Alumunium</h5>
                         <div class="d-flex justify-content-center mt-5 mb-5 pb-5">
                             <button type="button" class="btn btn-outline-dark"><a
