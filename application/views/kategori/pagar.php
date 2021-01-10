@@ -22,7 +22,7 @@
                     <span class="badge bg-success mb-3">Rp.
                         <?php echo number_format($brg->harga, 0,',','.') ?></span>
                     <?php echo anchor('dashboard/tambah_ke_keranjang/'.$brg->kode,'<div class="btn btn-sm btn-primary mb-3">Tambah ke Keranjang</div>') ?>
-                    <?php echo anchor('dashboard/detail/'.$brg->kode,'<div class="btn btn-sm btn-warning">Detail</div>') ?>
+                    <?php echo anchor('dashboard/detail_brg/'.$brg->kode,'<div class="btn btn-sm btn-warning">Detail</div>') ?>
                 </div>
             </div>
             <?php endforeach;?>
