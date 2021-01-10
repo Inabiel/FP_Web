@@ -5,6 +5,7 @@ class Barang_model extends CI_Model
   public function get_category($category){
     return $this->db->get_where("barang", array('kategori'=> $category));
   }
+  
   public function detail_brg($id){
     $result = $this->db->where('kode',$id)->get('barang');
 		if($result->num_rows() > 0){
@@ -13,4 +14,17 @@ class Barang_model extends CI_Model
 			return false;
 		}
   }
+
+  public function cari($id)
+  {
+	  $result = $this->db->where('kode', $id)
+						 ->limit(1)
+						 ->get('barang');
+	  if($result->num_rows() > 0){
+		  return $result->row();
+	  }else{
+		  return array();
+	  }
+  }
+  
 }

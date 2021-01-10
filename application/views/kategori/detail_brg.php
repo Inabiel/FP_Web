@@ -48,7 +48,7 @@
                         </tr>
                     </table>
 
-                    <?php echo anchor('dashboard/tambah_ke_keranjang/'.$brg->kode,'<div class="btn btn-sm btn-primary">Tambah ke Keranjang</div>') ?>
+                    <?php echo anchor('dashboard/add_cart/'.$brg->kode,'<div class="btn btn-sm btn-primary">Tambah ke Keranjang</div>') ?>
                     <div class="btn btn-sm btn-danger"><a href="<?php echo site_url('jasa')?>"
                             class="text-white text-decoration-none">Kembali</a></div>
                 </div>
