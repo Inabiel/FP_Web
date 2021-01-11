@@ -73,6 +73,7 @@ class Auth extends CI_Controller
       $this->load->view('user/login');
     }
   }
+  
   function signin()
   {
     //Form validasi
@@ -86,7 +87,7 @@ class Auth extends CI_Controller
       $this->session->set_flashdata('errors', $errors);
       $this->session->set_flashdata('input', $this->input->post());
 
-      redirect('index.php/auth/login');
+      redirect('login');
     } else {
       //Menangkap inputan dari form
       $username = htmlspecialchars($this->input->post('username'));

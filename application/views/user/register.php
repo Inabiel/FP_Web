@@ -90,7 +90,7 @@
                         <div class="p-t-15">
                             <button class="btn btn--radius-2 btn-primary" type="submit">Submit</button>
                             <button class="btn btn--radius-2 btn-primary" type="button"><a
-                                    href="<?php echo site_url('auth/login')?>"
+                                    href="<?php echo site_url('login')?>"
                                     class="text-white text-decoration-none">Login</a></button>
                         </div>
                     </form>

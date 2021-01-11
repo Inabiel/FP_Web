@@ -51,7 +51,7 @@
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true"
             aria-controls="collapsePages">
             <i class="fas fa-fw fa-folder"></i>
-            <span>Content Management</span>
+            <span>Manajemen Barang</span>
         </a>
     </li>
     <hr class="sidebar-divider d-none d-md-block">
