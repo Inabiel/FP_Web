@@ -22,10 +22,11 @@
                 <table class="table table-bordered table-hover table-striped">
                     <tr>
                         <th>Kode</th>
-                        <th>Nama Pemesan/th>
+                        <th>Nama Pemesan</th>
                         <th>Nomor Telepon</th>
                         <th>Nama Barang</th>
                         <th>Keterangan</th>
+                        <th>Request Selesai</th>
                     </tr>
                     <?php
         foreach ($requests as $req) :
@@ -36,6 +37,8 @@
                         <td><?php echo $req->no_telp ?></td>
                         <td><?php echo $req->nama_barang ?></td>
                         <td><?php echo $req->keterangan ?></td>
+                        <td><?php echo anchor('request/hapus_from_request/' .$req->id_request, '<div class="btn btn-primary btn-sm">Request Selesai</div>') ?>
+                        </td>
                     </tr>
                     <?php endforeach; ?>
                 </table>

@@ -40,6 +40,19 @@ class dashboard extends CI_Controller
 	{
 		$this->load->view('user/pesan');
 	}
+	public function request_to_db(){
+        $brg = $this->input->post('nama_barang');
+        $tlp = $this->input->post('no_telp');
+        $ktr = $this->input->post('keterangan');
+        $arr = array(
+            'nama_pemesan' => $this->session->userdata('username'),
+            'nama_barang' => $brg,
+            'no_telp' => $tlp,
+            'keterangan' => $ktr
+        );
+        $insert = $this->Barang_model->tambah_value($arr, 'request');
+        redirect('/request/req_done');
+    }
 	public function proses_pesan()
 	{
 		$is_processed = $this->model_invoice->index();

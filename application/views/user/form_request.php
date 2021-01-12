@@ -16,7 +16,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-6 mx-auto mb-5">
-                    <form action="<?php echo base_url('request/request_to_db')?>" method="POST">
+                    <form action="<?php echo base_url('dashboard/request_to_db')?>" method="POST">
                         <div class="mb-3">
                             <label for="nama" class="form-label text-center">Nama Barang</label>
                             <input type="text" name="nama_barang" class="form-control" id="nama_pemesan">
@@ -27,7 +27,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="keterangan" class="form-label text-center">Keterangan Barang</label>
-                            <input type="text name=" keterangan" class="form-control" id="keterangan">
+                            <input type="text" name="keterangan" class="form-control" id="keterangan">
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>

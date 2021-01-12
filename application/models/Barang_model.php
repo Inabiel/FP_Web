@@ -11,7 +11,10 @@ class Barang_model extends CI_Model
 	public function tambah_value($data,$table){
 		$this->db->insert($table,$data);
 	}
-	
+	public function hapus_data($where,$table){
+		$this->db->where($where);
+		$this->db->delete($table);
+	}
   public function get_category($category){
     return $this->db->get_where("barang", array('kategori'=> $category));
   }
@@ -24,7 +27,6 @@ class Barang_model extends CI_Model
 			return false;
 		}
   }
-
   public function cari($id)
   {
 	  $result = $this->db->where('kode', $id)
