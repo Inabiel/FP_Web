@@ -73,7 +73,7 @@ class Auth extends CI_Controller
       $this->load->view('user/login');
     }
   }
-  
+
   function signin()
   {
     //Form validasi
@@ -103,15 +103,18 @@ class Auth extends CI_Controller
           //Buatkan session
           $this->session->set_userdata('id', $cek->id);
           $this->session->set_userdata('username', $cek->username);
-          $this->session->set_userdata('role_id',$cek->role);
-          switch($cek->role){
-            case 'Admin': redirect('admin');
-                  break;
-            case 'User':redirect('home');
-                  break;
-            default: break;
+          $this->session->set_userdata('name', $cek->name);
+          $this->session->set_userdata('role_id', $cek->role);
+          switch ($cek->role) {
+            case 'Admin':
+              redirect('admin');
+              break;
+            case 'User':
+              redirect('home');
+              break;
+            default:
+              break;
           }
-
         } else {
           $this->session->set_flashdata('errors', "Maaf, Username atau Password salah");
           redirect('login');
@@ -125,12 +128,14 @@ class Auth extends CI_Controller
   {
     //Body function logout...
     $this->session->sess_destroy();
-    redirect('home'); 
+    redirect('home');
   }
-  public function not_admin(){
+  public function not_admin()
+  {
     $this->load->view('admin/404_not_admin');
   }
-  public function not_found(){
+  public function not_found()
+  {
     $this->load->view('errors/404');
   }
   public function home()
