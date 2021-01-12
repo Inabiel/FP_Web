@@ -61,4 +61,5 @@ $route['register'] = 'auth/register';
 $route['login'] = 'auth/login';
 $route['not_admin'] = 'auth/not_admin';
 $route['404_override'] = 'auth/not_found';
+$route['form_request'] = 'auth/form_request';
 $route['translate_uri_dashes'] = FALSE;

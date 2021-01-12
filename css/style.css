@@ -162,3 +162,6 @@ footer{
   height: 80%;
   border-right: 2px solid grey;
 }
+.opa{
+  color: rgba(56, 56, 56, 0.808);
+}
