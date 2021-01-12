@@ -37,9 +37,7 @@
               <td><?php echo $inv->keterangan ?></td>
               <td><?php echo $inv->tgl_pesan ?></td>
               <td><?php echo $inv->batas_bayar ?></td>
-              <td>
-                <div class="btn btn-sm btn-primary">Detail</div>
-              </td>
+              <td><?php echo anchor('invoice/detail/' . $inv->id, '<div class="btn btn-sm btn-primary">Detail</div>') ?></td>
             </tr>
           <?php endforeach; ?>
         </table>
