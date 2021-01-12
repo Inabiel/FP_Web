@@ -9,9 +9,9 @@
 
 <body>
     <?php
-    if($this->session->userdata('role_id') == ''){
-    redirect('auth/login');
-    }?>
+    if ($this->session->userdata('role_id') == '') {
+        redirect('auth/login');
+    } ?>
 
     <?php $this->load->view("user/header") ?>
     <div class="container">
@@ -25,25 +25,36 @@
                 <th>Sub-Total</th>
             </tr>
 
-            <?php 
-        $no=1;
-		foreach ($this->cart->contents() as $items) : ?>
+            <?php
+            $no = 1;
+            foreach ($this->cart->contents() as $items) : ?>
 
-            <tr>
-                <td><?php echo $no++ ?></td>
-                <td><?php echo $items['name'] ?></td>
-                <td><?php echo $items['qty'] ?></td>
-                <td>Rp. <?php echo number_format($items['price'], 0,',','.') ?></td>
-                <td>Rp. <?php echo number_format($items['subtotal'], 0,',','.') ?></td>
-            </tr>
+                <tr>
+                    <td><?php echo $no++ ?></td>
+                    <td><?php echo $items['name'] ?></td>
+                    <td><?php echo $items['qty'] ?></td>
+                    <td>Rp. <?php echo number_format($items['price'], 0, ',', '.') ?></td>
+                    <td>Rp. <?php echo number_format($items['subtotal'], 0, ',', '.') ?></td>
+                </tr>
 
             <?php endforeach; ?>
             <tr>
                 <td colspan="4"></td>
-                <td>Rp. <?php echo number_format($this->cart->total(), 0,',','.') ?></td>
+                <td>Rp. <?php echo number_format($this->cart->total(), 0, ',', '.') ?></td>
             </tr>
 
         </table>
+        <div align="right" class="mb-3">
+            <a href="<?php echo base_url('dashboard/delete_cart') ?>">
+                <div class="btn btn-sm btn-danger">Hapus Keranjang</div>
+            </a>
+            <a href="<?php echo base_url('jasa') ?>">
+                <div class="btn btn-sm btn-primary">Lanjutkan Belanja</div>
+            </a>
+            <a href="<?php echo base_url('dashboard/pesan') ?>">
+                <div class="btn btn-sm btn-success">Pesan</div>
+            </a>
+        </div>
     </div>
     <?php $this->load->view("user/footer") ?>
 </body>
