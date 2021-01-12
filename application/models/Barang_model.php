@@ -2,6 +2,16 @@
 defined('BASEPATH') or exit('No direct script access allowed');
 class Barang_model extends CI_Model
 {
+	public function tampil_data(){
+		return $this->db->get('barang');
+	}
+	public function tampil_request(){
+		return $this->db->get('request');
+	}
+	public function tambah_value($data,$table){
+		$this->db->insert($table,$data);
+	}
+	
   public function get_category($category){
     return $this->db->get_where("barang", array('kategori'=> $category));
   }

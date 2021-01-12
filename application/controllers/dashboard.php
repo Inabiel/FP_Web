@@ -50,4 +50,9 @@ class dashboard extends CI_Controller
 			echo "Maaf Pesanan Anda Gagal Diproses";
 		}
 	}
+	public function manajemen_barang($id)
+	{
+		$data['barang'] = $this->Barang_model->detail_brg($id);
+		$this->load->view('admin/manajemen_barang', $data);
+	}
 }

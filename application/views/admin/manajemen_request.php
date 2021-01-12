@@ -22,24 +22,20 @@
                 <table class="table table-bordered table-hover table-striped">
                     <tr>
                         <th>Kode</th>
+                        <th>Nama Pemesan/th>
+                        <th>Nomor Telepon</th>
                         <th>Nama Barang</th>
                         <th>Keterangan</th>
-                        <th>Kategori</th>
-                        <th>Harga</th>
-                        <th>Stok</th>
-                        <th>Gambar</th>
                     </tr>
                     <?php
-        foreach ($barang as $brg) :
+        foreach ($requests as $req) :
         ?>
                     <tr>
-                        <td><?php echo $brg->kode ?></td>
-                        <td><?php echo $brg->nama_brg ?></td>
-                        <td><?php echo $brg->keterangan ?></td>
-                        <td><?php echo $brg->kategori ?></td>
-                        <td><?php echo $brg->harga ?></td>
-                        <td><?php echo $brg->stok ?></td>
-                        <td><?php echo $brg->gambar ?></td>
+                        <td><?php echo $req->id_request ?></td>
+                        <td><?php echo $req->nama_pemesan ?></td>
+                        <td><?php echo $req->no_telp ?></td>
+                        <td><?php echo $req->nama_barang ?></td>
+                        <td><?php echo $req->keterangan ?></td>
                     </tr>
                     <?php endforeach; ?>
                 </table>
