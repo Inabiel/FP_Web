@@ -158,4 +158,8 @@ class Auth extends CI_Controller
   {
     $this->load->view('kategori/shopping_cart');
   }
+  public function manajemen_barang()
+  {
+    $this->load->view('admin/manajemen_barang');
+  }
 }
