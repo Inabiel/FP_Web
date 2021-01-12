@@ -27,7 +27,8 @@
             </div>
             <?php endforeach;?>
         </div>
-        <h6 class="text-center">Belum Menemukan yang dicari? silahkan request produk <a href="dsadsa">Disini</a></h6>
+        <h6 class="text-center">Belum Menemukan yang dicari? silahkan request produk <a
+                href="<?php echo site_url('form_request')?>">Disini</a></h6>
     </div>
     <?php $this->load->view("user/footer") ?>
 </body>

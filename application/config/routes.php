@@ -63,4 +63,5 @@ $route['invoice'] = 'invoice';
 $route['manajemen_barang'] = 'auth/manajemen_barang';
 $route['not_admin'] = 'auth/not_admin';
 $route['404_override'] = 'auth/not_found';
+$route['form_request'] = 'auth/form_request';
 $route['translate_uri_dashes'] = FALSE;

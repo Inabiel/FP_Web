@@ -162,4 +162,8 @@ class Auth extends CI_Controller
   {
     $this->load->view('admin/manajemen_barang');
   }
+  public function form_request()
+  {
+    $this->load->view('user/form_request');
+  }
 }

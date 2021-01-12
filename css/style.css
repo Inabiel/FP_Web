@@ -142,6 +142,9 @@
   margin-top: 15px;
   margin-bottom: 15px;
 }
+.bg-orendua{
+  background-color: #FD5D14 !important;
+}
 .title-widget{
   color: #FD5D14;
   margin-top: 15px;
@@ -161,4 +164,7 @@ footer{
   border-left: 2px solid grey;
   height: 80%;
   border-right: 2px solid grey;
+}
+.opa{
+  color: rgba(56, 56, 56, 0.808);
 }

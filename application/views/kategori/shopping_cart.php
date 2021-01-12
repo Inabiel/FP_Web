@@ -29,13 +29,13 @@
             $no = 1;
             foreach ($this->cart->contents() as $items) : ?>
 
-                <tr>
-                    <td><?php echo $no++ ?></td>
-                    <td><?php echo $items['name'] ?></td>
-                    <td><?php echo $items['qty'] ?></td>
-                    <td>Rp. <?php echo number_format($items['price'], 0, ',', '.') ?></td>
-                    <td>Rp. <?php echo number_format($items['subtotal'], 0, ',', '.') ?></td>
-                </tr>
+            <tr>
+                <td><?php echo $no++ ?></td>
+                <td><?php echo $items['name'] ?></td>
+                <td><?php echo $items['qty'] ?></td>
+                <td>Rp. <?php echo number_format($items['price'], 0, ',', '.') ?></td>
+                <td>Rp. <?php echo number_format($items['subtotal'], 0, ',', '.') ?></td>
+            </tr>
 
             <?php endforeach; ?>
             <tr>
