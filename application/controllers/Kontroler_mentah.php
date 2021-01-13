@@ -9,7 +9,7 @@ class kontroler_mentah extends CI_Controller
   function index()
   {
     $data = array(
-      'barang_mentah' => $this->Mentah_model->read()
+      'barang_mentah' => $this->Barang_model->tampil_barangmentah()
     );
     $this->load->view('admin/barang_mentah', $data);
   }
@@ -32,7 +32,7 @@ class kontroler_mentah extends CI_Controller
       'stok' => $stok
     );
 
-    $this->Mentah_model->create($data, 'barang_mentah');
+    $this->Barang_model->tambah_value($data, 'barang_mentah');
     redirect('kontroler_mentah');
   }
 
@@ -40,7 +40,7 @@ class kontroler_mentah extends CI_Controller
   {
     $where = array('id_barang_mentah' => $id_barang_mentah);
     $data = array(
-      'barang_mentah' => $this->Mentah_model->edit($where, 'barang_mentah')->result(),
+      'barang_mentah' => $this->Barang_model->edit_data($where, 'barang_mentah')->result(),
     );
     $this->load->view('admin/mentah_edit', $data);
   }
@@ -60,14 +60,14 @@ class kontroler_mentah extends CI_Controller
       'id_barang_mentah' => $id_barang_mentah
     );
 
-    $this->Mentah_model->update($where, $data, 'barang_mentah');
+    $this->Barang_model->update_data($where, $data, 'barang_mentah');
     redirect('Kontroler_mentah');
   }
 
   function delete($id_barang_mentah)
   {
     $where = array('id_barang_mentah' => $id_barang_mentah);
-    $this->Mentah_model->delete($where, 'barang_mentah');
+    $this->Barang_model->delete_data($where, 'barang_mentah');
     redirect('Kontroler_mentah');
   }
 }
