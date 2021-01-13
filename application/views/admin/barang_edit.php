@@ -20,7 +20,7 @@
 
             <div class="container">
                 <?php foreach ($barang as $brg) { ?>
-                <form action="<?php echo base_url('data_barang/update'); ?>" method="post">
+                <form method="post" action="<?php echo base_url('data_barang/update'); ?>">
                     <div class="form-group">
                         <label>Kode Barang</label>
                         <input class="form-control" type="text" name="kode_brg" value="<?php echo $brg->kode?>">

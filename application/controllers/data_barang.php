@@ -66,24 +66,24 @@ class data_barang extends CI_Controller
 	
 	public function update()
 	{
-	  $kode= $this->input->post('kode_brg');
-	  $nama_brg = $this->input->post('nama_brg');
-	  $ket_brg = $this->input->post('ket_brg');
+	  $kode = $this->input->post('kode_brg');
+	  $nama = $this->input->post('nama_brg');
+	  $ket = $this->input->post('ket_brg');
 	  $kategori = $this->input->post('kategori');
-	  $harga_brg = $this->input->post('harga_brg');
-	  $stok_brg = $this->input->post('stok_brg');
+	  $harga = $this->input->post('harga_brg');
+	  $stok = $this->input->post('stok_brg');
 	  
 	  $data = array(
 			'kode'	=> $kode,
-			'nama_brg'	=> $nama_brg,
-			'keterangan'	=> $ket_brg,
+			'nama_brg'	=> $nama,
+			'keterangan'	=> $ket,
 			'kategori'	=> $kategori,
-			'harga'			=> $harga_brg,
-			'stok'			=> $stok_brg,
+			'harga'			=> $harga,
+			'stok'			=> $stok,
 	  );
   
 	  $where = array(
-		'kode' => $kode_brg
+		'kode' => $kode
 	  );
   
 	  $this->Barang_model->update_data($where, $data, 'barang');
