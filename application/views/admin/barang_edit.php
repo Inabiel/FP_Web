@@ -22,11 +22,8 @@
                 <?php foreach ($barang as $brg) { ?>
                 <form method="post" action="<?php echo base_url('data_barang/update'); ?>">
                     <div class="form-group">
-                        <label>Kode Barang</label>
-                        <input class="form-control" type="text" name="kode_brg" value="<?php echo $brg->kode?>">
-                    </div>
-                    <div class="form-group">
                         <label>Nama Barang</label>
+                        <input class="form-control" type="hidden" name="kode_brg" value="<?php echo $brg->kode?>">
                         <input class="form-control" type="text" name="nama_brg" value="<?php echo $brg->nama_brg?>">
                     </div>
                     <div class="form-group">
@@ -52,6 +49,7 @@
                         <label>Stok</label>
                         <input class="form-control" type="text" name="stok_brg" value="<?php echo $brg->stok?>">
                     </div>
+
                     <button class="btn btn-sm btn-primary mt-3 mb-3" type="submit">Simpan</button>
                 </form>
                 <?php } ?>
