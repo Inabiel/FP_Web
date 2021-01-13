@@ -64,4 +64,5 @@ $route['manajemen_barang'] = 'data_barang/index';
 $route['not_admin'] = 'auth/not_admin';
 $route['404_override'] = 'auth/not_found';
 $route['form_request'] = 'auth/form_request';
+$route['barang_mentah'] = 'kontroler_mentah';
 $route['translate_uri_dashes'] = FALSE;
