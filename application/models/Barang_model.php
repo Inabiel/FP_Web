@@ -13,6 +13,13 @@ class Barang_model extends CI_Model
 		return false;
 	  }
 	}
+	function data($table,$number,$offset){
+		return $query = $this->db->get($table,$number, $offset)->result();		
+	}
+ 
+	function jumlah_data($table){
+		return $this->db->get($table)->num_rows();
+	}
 	
 	public function tampil_barang(){
 		  return $this->db->get('barang');

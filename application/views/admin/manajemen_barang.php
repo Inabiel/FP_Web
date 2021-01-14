@@ -37,8 +37,9 @@
                         <th>Delete</th>
                     </tr>
                     <?php
-        foreach ($barang as $brg) :
-        ?>
+                    $no = $this->uri->segment('3') + 1;
+                    foreach ($barang as $brg) :
+                    ?>
                     <tr>
                         <td><?php echo $brg->kode ?></td>
                         <td><?php echo $brg->nama_brg ?></td>
@@ -55,6 +56,12 @@
                     </tr>
                     <?php endforeach; ?>
                 </table>
+                <div class="row">
+                    <div class="col">
+                        <!--Tampilkan pagination-->
+                        <?php echo $pagination; ?>
+                    </div>
+                </div>
                 <?php $this->load->view("admin/_parts/footer") ?>
 
             </div>
