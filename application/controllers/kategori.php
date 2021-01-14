@@ -23,7 +23,7 @@ class Kategori extends CI_Controller
     $this->load->view('kategori/kusen', $data);
     }
     public function rangka(){
-    $data['pintu'] = $this->Barang_model->get_category('Rangka')->result();
+    $data['rangka'] = $this->Barang_model->get_category('Rangka')->result();
     $this->load->view('kategori/rangka', $data);
     }
 }
