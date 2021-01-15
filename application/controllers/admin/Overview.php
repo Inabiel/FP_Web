@@ -1,7 +1,8 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Overview extends CI_Controller {
+class Overview extends CI_Controller
+{
 
 	/**
 	 * Index Page for this controller.
@@ -20,6 +21,11 @@ class Overview extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('admin/admin_dash');
+		$data['jumlah_mentah'] = $this->Model_dashboard->jml_baris('barang_mentah');
+		$data['jumlah_pesanan'] = $this->Model_dashboard->jml_baris('invoice');
+		$data['jumlah_barang'] = $this->Model_dashboard->jml_baris('barang');
+		$data['jumlah_request'] = $this->Model_dashboard->jml_baris('request');
+		$data['join'] = $this->Model_dashboard->join_tbl();
+		$this->load->view('admin/admin_dash', $data);
 	}
 }

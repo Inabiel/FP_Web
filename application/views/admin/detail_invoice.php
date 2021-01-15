@@ -46,11 +46,12 @@
               <td><?php echo $psn->jumlah ?></td>
               <td><?php echo number_format($psn->harga, 0, ',', '.') ?></td>
             </tr>
-            <tr>
-              <td colspan="6">Total Harga</td>
-              <td><?php echo number_format($subtotal, 0, ',', '.') ?></td>
-            </tr>
+
           <?php endforeach; ?>
+          <tr>
+            <td colspan="6">Total Harga</td>
+            <td><?php echo number_format($total, 0, ',', '.') ?></td>
+          </tr>
         </table>
       </div>
       <?php $this->load->view("admin/_parts/footer") ?>
